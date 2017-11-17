@@ -524,7 +524,7 @@ namespace CarouselView.FormsPlugin.Android
             public override void DestroyItem(AViews.ViewGroup container, int position, Java.Lang.Object @object)
             {
                 var pager = (ViewPager)container;
-                var view = (AViews.ViewGroup)@object;
+                var view = @object as AViews.ViewGroup;
                 //view.SaveEnabled = true;
                 //view.SaveHierarchyState(mViewStates);
                 pager.RemoveView(view);
